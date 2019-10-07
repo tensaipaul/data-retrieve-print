@@ -1,0 +1,103 @@
+table {
+  border-collapse: collapse;
+  width:auto;
+  height:auto;
+  margin-left: 0;
+  margin-right: 0;
+} 
+
+th {
+  border: 1px solid black;
+  height: 50px;
+  padding-left: 2px;
+  padding-right: 2px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+td{
+  padding-left: 2px;
+  padding-right: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+  border-style: solid;
+  border-width: thin;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.border{
+  border: 1px solid black;
+}
+
+.alignleft{
+  text-align: left;
+}
+
+.noborder{
+  border:none;
+  border:0px;
+}
+
+.rowborder td{
+  border-top:0;
+  border-bottom:0;
+}
+
+.break{
+  page-break-after: always;
+  page-break-inside:avoid;
+  /* page-break-inside:auto  */
+}
+
+@media print{
+#printbtn {
+   display:none;
+}
+
+/* table{
+  margin: auto;
+  width:auto;
+  height:auto;
+}  */
+
+.fixed{
+  width:150px;
+}
+
+#div-id-name{
+  align-items:center;  
+  height:100%;
+  width: 100%
+  }
+
+ html, body{
+   width:100%;
+   height:100%;
+ 
+  } 
+
+  body {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+  }
+}
+
+
+.hidden-print{
+  display: none !important;
+}
+
+@page:left{
+  
+    
+}
+ /* @page { size:8.5in 11in; margin: 2cm }  ****paper size*/
+
+ /* @page {
+   size: 12in 10in; 
+   margin: 0;
+}   */
